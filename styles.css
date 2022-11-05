@@ -1,3 +1,36 @@
-p {
-    font-weight: bold;
+* {
+    padding: 0;
+    margin: 0;
+}
+/* container */
+section {
+    background-color: lightgrey;
+    width: 80%;
+   /* height: 700px; */
+    margin: 50px auto; 
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+div{
+    background-color: red;
+    height: 100px;
+    width: 200px;
+}
+
+/* media queries at the bottom of css file */
+/* min-width: going from small to big screen */
+/* max-width: going from big to small screen */
+@media only screen and (max-width: 1300px) {
+    section {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+    }
+    div {
+        background-color: blue;
+
+    }
 }
